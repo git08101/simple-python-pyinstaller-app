@@ -55,7 +55,7 @@ pipeline {
                         success {
                             //This archiveArtifacts step archives the standalone executable file and exposes this file
                             //through the Jenkins interface.
-                            archiveArtifacts "sources/dist/add2vals"
+                            archiveArtifacts "dist/add2vals"
                             sh "rm -rf dist"
                         }
                     }
